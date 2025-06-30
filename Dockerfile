@@ -36,8 +36,6 @@ RUN apt-get update \
         && rm -rf ${SDKMAN_DIR}/archives/* \
         && rm -rf ${SDKMAN_DIR}/tmp/*"
 
-WORKDIR /opt/app
-
 SHELL ["/bin/bash", "-i", "-c"]
 
 ENTRYPOINT [ "/root/entrypoint.sh" ]
